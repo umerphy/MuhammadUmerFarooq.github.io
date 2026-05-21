@@ -1,1 +1,371 @@
 <h1>Hello World! My website is live.</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umer Moon | Research Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #d9d9d9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #3a3a3a;
+            color: white;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 28px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #bfbfbf;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 10%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #555;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Home Section */
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .home-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 40px;
+        }
+
+        .home-text h3 {
+            font-size: 22px;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .home-text p {
+            font-size: 18px;
+        }
+
+        .profile-pic {
+            flex: 1;
+            text-align: center;
+            min-width: 250px;
+        }
+
+        .profile-pic img {
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Cards */
+        .card {
+            background: #efefef;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        /* Resume Button */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #3a3a3a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #222;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3a3a3a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .home-text {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Umer Moon</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume/CV</a></li>
+                <li><a href="#research">Research & Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home">
+        <div class="home">
+
+            <div class="home-text">
+                <h2>Home Page</h2>
+
+                <h3>Electrochemical Researcher</h3>
+
+                <p>
+                    Electrochemical Researcher specializing in green ammonia synthesis,
+                    failure analysis, vacuum systems, gas handling, and materials
+                    characterization.
+                </p>
+
+                <br>
+
+                <p>
+                    Welcome to my professional portfolio website. Here you can explore
+                    my research background, technical expertise, publications, and
+                    ongoing projects related to electrochemistry and advanced materials.
+                </p>
+            </div>
+
+            <div class="profile-pic">
+                <!-- Replace with your image -->
+                <img src="your-photo.jpg" alt="Professional Photo">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="card">
+            <h3>Educational Background</h3>
+            <p>
+                Graduate researcher at Texas Tech University with experience in
+                electrochemical systems, sustainable energy technologies, and
+                advanced materials characterization.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Research Interests</h3>
+
+            <ul>
+                <li>Electrochemical nitrogen fixation</li>
+                <li>Green ammonia synthesis</li>
+                <li>Electrocatalysis</li>
+                <li>Failure analysis</li>
+                <li>Vacuum and gas handling systems</li>
+                <li>Materials characterization</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Technical Skills</h3>
+
+            <ul>
+                <li>Electrochemical testing and analysis</li>
+                <li>Vacuum systems and leak testing</li>
+                <li>Gas handling systems</li>
+                <li>SEM, XRD, and materials characterization</li>
+                <li>Root-cause analysis</li>
+                <li>Experimental setup design</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Career Goals</h3>
+
+            <p>
+                Seeking opportunities in electrochemical engineering, process
+                development, advanced manufacturing, and failure analysis to
+                contribute toward sustainable and innovative technologies.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+
+        <h2>Resume / CV</h2>
+
+        <div class="card">
+
+            <p>
+                Download my latest resume/CV in PDF format.
+            </p>
+
+            <!-- Replace with your PDF file -->
+            <a class="btn" href="resume.pdf" download>
+                Download Resume
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Research & Projects -->
+    <section id="research">
+
+        <h2>Research & Projects</h2>
+
+        <div class="card">
+            <h3>Graduate Research</h3>
+
+            <p>
+                Developed electrochemical nitrogen fixation systems and optimized
+                operational parameters for green ammonia and nitrate synthesis
+                using sustainable electrochemical pathways.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Experimental Setups</h3>
+
+            <ul>
+                <li>Vacuum system integration</li>
+                <li>Gas flow and handling systems</li>
+                <li>Electrochemical reactor development</li>
+                <li>Leak testing and diagnostics</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Technical Expertise</h3>
+
+            <ul>
+                <li>Failure analysis and root-cause investigation</li>
+                <li>Materials characterization techniques</li>
+                <li>Electrochemical performance evaluation</li>
+                <li>Research data interpretation</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Publications</h3>
+
+            <p>
+                Add your research publications, conference papers,
+                and technical presentations here.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="card">
+
+            <p><strong>Email:</strong> your-email@example.com</p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com" target="_blank">
+                    LinkedIn Profile
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com" target="_blank">
+                    GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Umer Moon | Professional Research Portfolio</p>
+    </footer>
+
+</body>
+</html>
