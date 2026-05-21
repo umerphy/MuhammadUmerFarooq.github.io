@@ -1,1 +1,1 @@
-# MuhammadUmerFarooq.github.io
+# muhammadumerfarooq.github.io
