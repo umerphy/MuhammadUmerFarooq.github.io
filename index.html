@@ -1,62 +1,255 @@
-<h1>Hello World! My website is live.</h1>
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website showcasing experience, projects, skills, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">YN</span>
+        <span>Your Name</span>
+      </a>
 
-<body>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
 
-<nav>
-    <h1>Umer Moon</h1>
+      <nav class="tabs" aria-label="Portfolio sections">
+        <button class="tab is-active" type="button" data-tab="home">Home</button>
+        <button class="tab" type="button" data-tab="about">About</button>
+        <button class="tab" type="button" data-tab="experience">Experience</button>
+        <button class="tab" type="button" data-tab="projects">Projects</button>
+        <button class="tab" type="button" data-tab="skills">Skills</button>
+        <button class="tab" type="button" data-tab="contact">Contact</button>
+      </nav>
+    </header>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="resume.html">Resume/CV</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <main>
+      <section class="panel is-active hero" id="home" aria-labelledby="home-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Available for full-time roles</p>
+          <h1 id="home-title">Your Name</h1>
+          <p class="hero-role">Frontend Developer | Software Engineer | Problem Solver</p>
+          <p class="hero-summary">
+            I build clean, useful web experiences with strong attention to design, performance,
+            accessibility, and real business outcomes.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="mailto:youremail@example.com">Contact Me</a>
+            <a class="button secondary" href="#projects" data-link-tab="projects">View Projects</a>
+          </div>
+        </div>
 
-<section>
+        <div class="hero-visual" aria-label="Professional portfolio preview">
+          <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1100&q=80"
+            alt="Modern desk workspace with laptop and notebook"
+          />
+          <div class="stats-strip" aria-label="Career highlights">
+            <div>
+              <strong>3+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div>
+              <strong>12</strong>
+              <span>Projects Built</span>
+            </div>
+            <div>
+              <strong>5</strong>
+              <span>Core Skills</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <h2>Home Page</h2>
+      <section class="panel" id="about" aria-labelledby="about-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A short introduction recruiters can scan fast.</h2>
+        </div>
+        <div class="split">
+          <div>
+            <p>
+              I am a motivated technology professional focused on building reliable, elegant,
+              and user-friendly digital products. I enjoy translating complex needs into simple
+              interfaces and maintainable code.
+            </p>
+            <p>
+              My strengths include learning quickly, communicating clearly, and staying organized
+              from idea to delivery. I am currently looking for a role where I can contribute,
+              grow, and help a team ship meaningful work.
+            </p>
+          </div>
+          <dl class="quick-facts">
+            <div>
+              <dt>Location</dt>
+              <dd>Your City, Country</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Web Development, UI, Software</dd>
+            </div>
+            <div>
+              <dt>Open To</dt>
+              <dd>Full-time, Internship, Remote</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-    <h3>Electrochemical Researcher</h3>
+      <section class="panel" id="experience" aria-labelledby="experience-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Work, education, and achievements.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">2024 - Present</span>
+            <h3>Job Title or Program Name</h3>
+            <p class="muted">Company or College Name</p>
+            <p>
+              Describe your main responsibility, the tools you used, and one measurable result.
+              Example: improved page speed, supported users, built dashboards, or reduced manual work.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2023 - 2024</span>
+            <h3>Previous Role or Training</h3>
+            <p class="muted">Organization Name</p>
+            <p>
+              Add two or three strong points showing leadership, teamwork, communication, and
+              technical problem-solving.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2022</span>
+            <h3>Certification or Degree</h3>
+            <p class="muted">Institution Name</p>
+            <p>
+              Mention your major subjects, certifications, honors, or relevant coursework.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <p>
-        Electrochemical Researcher specializing in green ammonia synthesis,
-        failure analysis, and materials characterization.
-    </p>
+      <section class="panel" id="projects" aria-labelledby="projects-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Selected work that proves what you can do.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+              alt="Analytics dashboard on a computer screen"
+            />
+            <div>
+              <h3>Dashboard App</h3>
+              <p>
+                A responsive dashboard for tracking important metrics with filters, clean charts,
+                and reusable components.
+              </p>
+              <a href="#" aria-label="View Dashboard App project">View Project</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+              alt="Person working on a laptop"
+            />
+            <div>
+              <h3>Business Website</h3>
+              <p>
+                A fast, mobile-friendly website with service pages, contact flow, and polished
+                content sections.
+              </p>
+              <a href="#" aria-label="View Business Website project">View Project</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80"
+              alt="Code editor on laptop screen"
+            />
+            <div>
+              <h3>Automation Tool</h3>
+              <p>
+                A small tool that saves time by collecting data, validating input, and generating
+                clean reports.
+              </p>
+              <a href="#" aria-label="View Automation Tool project">View Project</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-</section>
+      <section class="panel" id="skills" aria-labelledby="skills-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Tools and strengths I bring to a team.</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-group">
+            <h3>Technical</h3>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>GitHub</li>
+              <li>APIs</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Professional</h3>
+            <ul class="chips">
+              <li>Communication</li>
+              <li>Problem Solving</li>
+              <li>Teamwork</li>
+              <li>Time Management</li>
+              <li>Customer Focus</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <section class="panel" id="contact" aria-labelledby="contact-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let us talk about the next opportunity.</h2>
+        </div>
+        <div class="contact-panel">
+          <p>
+            I am ready to discuss roles, internships, freelance projects, or collaborations.
+            Replace the links below with your real contact information.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:youremail@example.com">youremail@example.com</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Your Name. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-about.html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<nav>
-    <h1>Umer Moon</h1>
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="resume.html">Resume/CV</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<section>
-
-    <h2>About Me</h2>
